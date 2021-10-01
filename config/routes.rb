@@ -1,6 +1,6 @@
 Rails.application.routes.draw do
   resources :books
-  root to: 'main#index'
+  root 'books#index'
   get "new", to: "new#index"
   get "show", to: "show#index"
   get "edit", to: "edit#index"
